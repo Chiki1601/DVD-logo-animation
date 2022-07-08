@@ -1,0 +1,46 @@
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+html,
+body{
+  height:100%;
+}
+
+body{
+  background:hsl(220, 100%, 1%);
+  overflow:hidden;
+}
+
+img{
+  display:block;
+  max-width:100%;
+}
+
+svg{
+  width:150px;
+  animation:rainbow 8s infinite ease;
+  position:absolute;
+  transition: 100ms linear;
+  
+}
+
+@keyframes rainbow{
+  0%{
+    fill:hsl(220, 70%, 50%);
+  }
+  25%{
+    fill:hsl(120, 70%, 50%);
+  }
+  50%{
+    fill:hsl(20, 70%, 50%);
+  }
+  75%{
+    fill:hsl(300, 70%, 50%);
+  }
+  100%{
+    fill:hsl(220, 70%, 50%);
+  }
+}
